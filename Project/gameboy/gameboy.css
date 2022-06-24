@@ -165,8 +165,8 @@ a {
 
 .content{
     margin-top: 100px;
-    margin-left: 60px;
-    margin-right: 50%;
+    padding: 0 60px 0 60px;
+
 }
 
 .content h2{
@@ -174,8 +174,9 @@ a {
     line-height: normal;
 }
 
-.content p,a{
+.content p{
     font-size: 20px;
+    color: #747474;
 }
 
 .menu-button{
@@ -227,12 +228,34 @@ a {
 }
 
 .container {
-    margin: 100px;
     position: relative;
     text-align: center;
     color: white;
-    border: 3px #000000;
-    border-style: solid;
+}
+
+.spec-table td, th {
+    border: 2px solid #000000;
+    margin: 0;
+    text-align: left;
+  }
+
+.spec-table tr{
+    font-weight: normal;
+}
+
+.spec-table td:nth-child(1){
+    font-weight: bold;
+    text-align: center;
+    width: 10%;
+}
+
+.spec-table td:nth-child(2){
+    padding-left: 2%;
+}
+
+#image-grid{
+    display: flex;
+    margin: 0 60px 0 60px;
 }
 
 .container h2{

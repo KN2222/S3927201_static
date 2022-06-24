@@ -242,6 +242,10 @@ a {
     margin: 0;
     padding: 20px;
 }
+
+#project-img{
+    width:80%;
+}
   
 .project-name {
     font-size: 70px;
@@ -251,7 +255,7 @@ a {
     left: 30%;
     background-color: #f1f1f1;
     transition: 0.5s ease-in-out;
-    margin: 0 255px 0 255px;
+    margin: 0 128px 0 128px;
 }
 
 .project-name:hover{
@@ -326,4 +330,20 @@ a {
         position: relative;
         text-align: right;
     }
+
+    .container{
+        padding: 0;
+        margin: 0 5px 20px 5px;
+    }
+
+    .container img{
+        width: 100%;
+    }
+
+    .project-name{
+        font-size: 30px;
+        text-align: center;
+        margin: 0 38px 0 38px;
+    }
+
 }
