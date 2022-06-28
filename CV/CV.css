@@ -239,49 +239,6 @@ a {
     display: none;
 }
 
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.95);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    margin-top: 30px;
-}
-
-.overlay-content a {
-    text-align: center;
-}
-  
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #f1f1f1;
-    display: block;
-    transition: 0.3s;
-}
-  
-.overlay a:focus {
-    color: #f1f1f1;
-}
-  
-.overlay .closebtn {
-    position: absolute;
-    top: 0px;
-    right: 10px;
-    font-size: 60px;
-}
 
 
 @media only screen and (max-width:1280px) {
@@ -311,12 +268,47 @@ a {
         display: none;
     }
 
-    .menu-button{
-        display: block;
-        margin-top: 20px;
-        margin-right: 20px;
-        font-size:30px;
-        cursor: "pointer";
+    .dropdown{
+        display:block;
+        width: 30%;
+        text-align: right;
+    }
+
+    .dropdown input[type="checkbox"] {
+        display: none;
+    }
+
+    .dropdown label div{
+        position: absolute;
+    }
+      
+    .dropdown nav ul {
+        max-height: 0px;
+        overflow: hidden;
+        list-style: none;
+        transition: all 1s cubic-bezier(.325, 1, .22, 1);
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+
+    .dropdown nav ul li a{
+        color: #747474;
+    }
+      
+    .dropdown input[type=checkbox]:checked ~ nav ul {
+        height: auto;
+        max-height: 12rem;
+        transition: all 1s cubic-bezier(.5, 1, .22, 1);
+    }
+
+    .checkbox_toggle{
+        overflow-x: hidden;
+    }
+
+    .butn{
+        font-size: 30px;
+        font-weight: bold;
+        padding-left: 12%;
     }
 
     .footer{

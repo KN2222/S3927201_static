@@ -51,7 +51,6 @@ ul {
 }
 
 a {
-	color: #000000;
     font-weight: medium;
     text-decoration: none;
 }
@@ -78,12 +77,12 @@ a {
 .logo {
 	margin: 0;
     margin-left: 50px;
-	
 }
 
 .logo a {
     font-size: 30px;
     font-weight: bold;
+    color: #000000;
 }
 
 .main-nav {
@@ -176,6 +175,7 @@ a {
 
 .content p,a{
     font-size: 20px;
+    color: #747474;
 }
 
 .content a, p span{
@@ -188,7 +188,7 @@ a {
     color: #e03560 ;
 }
 
-.menu-button{
+/* .menu-button{
     display: none;
 }
 
@@ -234,8 +234,11 @@ a {
     top: 0px;
     right: 10px;
     font-size: 60px;
-}
+} */
 
+.dropdown{
+    display: none;
+}
 
 @media only screen and (max-width:1280px) {
     *{
@@ -264,14 +267,53 @@ a {
         display: none;
     }
 
-    .menu-button{
+    /* .menu-button{
         display: block;
         margin-top: 20px;
         margin-right: 20px;
         font-size:30px;
         cursor: "pointer";
+    } */
+
+    .dropdown{
+        display:block;
+        width: 30%;
+        text-align: right;
     }
 
+    .dropdown input[type="checkbox"] {
+        display: none;
+    }
+
+    .dropdown label div{
+        position: absolute;
+    }
+      
+    .dropdown nav ul {
+        max-height: 0px;
+        overflow: hidden;
+        list-style: none;
+        transition: all 1s cubic-bezier(.325, 1, .22, 1);
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+      
+    .dropdown input[type=checkbox]:checked ~ nav ul {
+        height: auto;
+        max-height: 12rem;
+        transition: all 1s cubic-bezier(.5, 1, .22, 1);
+    }
+
+    .checkbox_toggle{
+        overflow-x: hidden;
+    }
+
+    .butn{
+        font-size: 30px;
+        font-weight: bold;
+        padding-left: 12%;
+    }
+      
     .footer{
         margin-left: 60px;
         justify-content: flex-start;
@@ -299,4 +341,6 @@ a {
         position: relative;
         text-align: right;
     }
+
+    
 }
