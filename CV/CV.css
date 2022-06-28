@@ -288,7 +288,7 @@ a {
         list-style: none;
         transition: all 1s cubic-bezier(.325, 1, .22, 1);
         margin-top: 50px;
-        margin-right: 50px;
+        margin-right: 40px;
     }
 
     .dropdown nav ul li a{
